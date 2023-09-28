@@ -1,5 +1,8 @@
 import pyshark
 
+#TODO: FIGURE OUT TO GRACIOUSLY EXIT TSHARK - DO NOT LET IT BE OPEN TO CONSUME MEMORY
+
+
 class Sniffer():
     '''
     BASE CLASS
