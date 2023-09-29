@@ -35,7 +35,7 @@ class Sniffer():
             print("fuck")
             # go through sniffed packets and put into queue
             for packet in capture:
-                print(packet)
+                print("packet")
                 self.q.put(packet.__str__())
             print("does it get here")
         capture.close()
