@@ -19,6 +19,6 @@ class Connection():
                 packet = self.q.get()
                 print(packet)
                 # You can serialize the packet in various ways, as simple bytes for instance
-                sock.send(data="hej".encode())
+                sock.send("hej".encode())
             
             
