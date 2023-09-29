@@ -18,9 +18,7 @@ class Connection():
             while not self.q.empty():
                 packet = self.q.get()
                 print(packet)
-                print(requests.post("http://" + self.host, data=("hej")))
                 # You can serialize the packet in various ways, as simple bytes for instance
-                response = requests.post("http://" +  self.host, data=bytes(packet))
-                print(response)
+                sock.send(data="hej")
             
             
