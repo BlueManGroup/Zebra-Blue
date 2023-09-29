@@ -5,7 +5,7 @@ from connection import Connection
 if __name__ == '__main__':
     q_sniff = mp.Queue()
     q_conn = mp.Queue()
-    sniffer = Sniffer(q=q_sniff, packet_count=1)
+    sniffer = Sniffer(q=q_sniff, interface='eth0', packet_count=1)
     connection = Connection(q=q_sniff)
     
     sniff_proc = mp.Process(target=sniffer.sniff)
