@@ -24,16 +24,18 @@ class Sniffer():
         self.cont_sniff = False
 
     def sniff(self):
-        print("halløj på badehotellet")
-        time.sleep(10)
+        print("sniffer beginning........")
         # set up for continuous capturing
         capture = pyshark.LiveCapture(interface=self.interface)
 
         while self.cont_sniff:
             capture.sniff_continuously(packet_count=self.packet_count)
+            print(capture)
             # go through sniffed packets and put into queue
             for packet in capture:
                 self.q.put(packet)
+
+        capture.close()
 
 
 #sniffer = Sniffer(interface = 'Wi-Fi', monitor_mode = None)
