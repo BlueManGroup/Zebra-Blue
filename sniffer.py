@@ -28,6 +28,7 @@ class Sniffer():
         # set up for continuous capturing
         capture = pyshark.LiveCapture(interface=self.interface)
         while self.cont_sniff:
+            print(self.cont_sniff)
             capture.sniff_continuously(packet_count=self.packet_count)
             # go through sniffed packets and put into queue
             print(capture)
