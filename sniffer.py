@@ -13,7 +13,7 @@ class Sniffer():
     CONT_SNIFF = BOOLEAN TO STOP WHILE LOOP SNIFFING (TODO: FIGURE OUT TO NEGATE THIS DURING RUNTIME)
     Q = QUEUE MANAGER FROM OTHER FILE (TRANSMITS PACKETS TO MACHINE LEARNING MODEL (THIS IS NOT MODULAR OR GOOD PRACTICE TO HARDCODE LIKE THIS))
     '''
-    def __init__(self, packet_count=1, interface=None, monitor_mode=True, cont_sniff=True, q=None):
+    def __init__(self, packet_count=1, interface=None, monitor_mode=None, cont_sniff=True, q=None):
         self.packet_count = packet_count
         self.interface = interface
         self.monitor_mode = monitor_mode
@@ -32,6 +32,7 @@ class Sniffer():
             capture.sniff_continuously(packet_count=self.packet_count)
             # go through sniffed packets and put into queue
             print("test")
+            print(capture)
             for packet in capture:
                 print("sniffer.py queue size:", self.q.qsize())
                 self.q.put(packet.__str__())
