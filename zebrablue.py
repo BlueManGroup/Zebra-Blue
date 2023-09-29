@@ -10,8 +10,6 @@ if __name__ == '__main__':
     
     sniff_proc = mp.Process(target=sniffer.sniff).start()
     conn_proc = mp.Process(target=connection.connect).start()
-    while True:
-        pass
     sniff_proc.join()
     conn_proc.join()
     

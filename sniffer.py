@@ -27,17 +27,11 @@ class Sniffer():
         print("sniffer beginning........")
         # set up for continuous capturing
         capture = pyshark.LiveCapture(interface=self.interface)
-        print(self.cont_sniff)
         while self.cont_sniff:
             capture.sniff_continuously(packet_count=self.packet_count)
-            print(capture)
-            print("shit")
-            print("fuck")
             # go through sniffed packets and put into queue
             for packet in capture:
-                print("packet")
                 self.q.put(packet.__str__())
-            print("does it get here")
         capture.close()
 
 
