@@ -13,9 +13,10 @@ class Connection():
         sock.connect((self.host, self.port))
         print("connection established.....")
         while True:
+            time.sleep(2)
             while not self.q.empty():
                 packet = self.q.get()
                 # You can serialize the packet in various ways, as simple bytes for instance
                 response = requests.post("http://" +  self.host, data=bytes(packet))
-            time.sleep(1)
+            
             
