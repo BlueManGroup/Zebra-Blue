@@ -17,7 +17,9 @@ class Connection():
             print("connection.py queue is empty:", self.q.empty())
             while not self.q.empty():
                 packet = self.q.get()
-                # You can serialize the packet in various ways, as simple bytes for instance
                 sock.send(packet.encode())
+                # TODO: PACKETS ARE SENT TOO QUCIKLY FOR THE RECEIVER TO BE ABLE TO DISTINGUISH THEM AS SEPARATE PACKETS
+                # THIS MEANS THAT PACKETS ARE CONCATENATED WHEN RECEIVED. 
+                # MIGHT BE SOLVED WHEN ANOMALY DETECTION ARE THE ONLY PACKETS SENT, BUT SET SOME HARD LIMIT LIKE SLEEP 0.5
             
             
