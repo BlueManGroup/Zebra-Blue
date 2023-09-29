@@ -17,8 +17,7 @@ class Connection():
             print("connection.py queue is empty:", self.q.empty())
             while not self.q.empty():
                 packet = self.q.get()
-                print(packet)
                 # You can serialize the packet in various ways, as simple bytes for instance
-                sock.send("hej".encode())
+                sock.send(packet.encode())
             
             
