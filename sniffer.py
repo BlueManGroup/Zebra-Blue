@@ -37,7 +37,7 @@ class Sniffer():
             for packet in capture:
                 print(packet)
                 self.q.put(packet.__str__())
-
+            print("does it get here")
         capture.close()
 
 
