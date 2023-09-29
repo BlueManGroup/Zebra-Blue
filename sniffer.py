@@ -1,4 +1,5 @@
 import pyshark
+import time
 
 #TODO: FIGURE OUT TO GRACIOUSLY EXIT TSHARK - DO NOT LET IT BE OPEN TO CONSUME MEMORY
 
@@ -19,7 +20,12 @@ class Sniffer():
         self.cont_sniff = cont_sniff
         self.q = q
 
+    def stop_sniffing(self):
+        self.cont_sniff = False
+
     def sniff(self):
+        print("halløj på badehotellet")
+        time.sleep(10)
         # set up for continuous capturing
         capture = pyshark.LiveCapture(interface=self.interface)
 

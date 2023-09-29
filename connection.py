@@ -2,6 +2,9 @@ import socket
 import requests
 from queue import Queue
 
+
+def test():
+    print("test")
 if __name__ == '__main__':
     host = '130.225.39.30'
     port = 8080
