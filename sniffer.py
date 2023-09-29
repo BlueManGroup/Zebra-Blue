@@ -31,7 +31,6 @@ class Sniffer():
             print(self.cont_sniff)
             capture.sniff(packet_count=self.packet_count, timeout=10)
             # go through sniffed packets and put into queue
-            print(packet for packet in capture)
             print("test")
             for packet in capture:
                 print("sniffer.py queue size:", self.q.qsize())
