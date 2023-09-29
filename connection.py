@@ -17,6 +17,7 @@ class Connection():
             print("connection.py queue is empty:", self.q.empty())
             while not self.q.empty():
                 packet = self.q.get()
+                print(packet)
                 # You can serialize the packet in various ways, as simple bytes for instance
                 response = requests.post("http://" +  self.host, data=bytes(packet))
                 print(response)
