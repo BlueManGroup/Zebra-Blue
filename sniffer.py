@@ -31,7 +31,7 @@ class Sniffer():
             capture.sniff_continuously(packet_count=self.packet_count)
             # go through sniffed packets and put into queue
             for packet in capture:
-                self.q.put(packet.__str__())
+                self.q.put(packet.__str__().encode('utf8'))
         capture.close()
 
 
