@@ -5,7 +5,7 @@ import time
 class Connection():
     def __init__(self, q=None):
         self.q = q
-        self.host = 'http://130.225.39.30'
+        self.host = '130.225.39.30'
         self.port = 8080
 
     def connect(self):
