@@ -14,7 +14,7 @@ class Connection():
         print("connection established.....")
         while True:
             time.sleep(2)
-            print("connection.py queue is empty:" + self.q.empty())
+            print("connection.py queue is empty:", self.q.empty())
             while not self.q.empty():
                 packet = self.q.get()
                 # You can serialize the packet in various ways, as simple bytes for instance

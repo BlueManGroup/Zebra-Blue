@@ -32,7 +32,7 @@ class Sniffer():
             # go through sniffed packets and put into queue
             for packet in capture:
                 self.q.put(packet.__str__())
-                print("sniffer.py queue size:" + self.q.qsize())
+                print("sniffer.py queue size:", self.q.qsize())
         capture.close()
 
 
