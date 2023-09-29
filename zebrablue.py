@@ -7,8 +7,7 @@ if __name__ == '__main__':
     q_conn = mp.Queue()
     sniffer = Sniffer(q=q_sniff, interface='wlan0')
     
-    sniff_proc = mp.Process(target=sniffer.sniff()).start()
-    test_proc = mp.Process(target=connection.test()).start()
-    sniff_proc.run()
-    test_proc.run()
-    
+    sniff_proc = mp.Process(target=sniffer.sniff, args=()).start()
+    test_proc = mp.Process(target=connection.test, args=()).start()
+    sniff_proc.join()
+    test_proc.join()
