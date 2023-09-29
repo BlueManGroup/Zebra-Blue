@@ -33,6 +33,7 @@ class Sniffer():
             print(capture)
             # go through sniffed packets and put into queue
             for packet in capture:
+                print(packet)
                 self.q.put(packet.__str__())
 
         capture.close()
