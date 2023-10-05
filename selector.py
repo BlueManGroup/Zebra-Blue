@@ -16,7 +16,7 @@ class Selector():
     def select(self):
         random.seed()
         
-        while cont_select:
+        while self.cont_select:
             # fetch packet from q. if q empty wait for packet to be put into q
             curPacket = self.q_sniff.get(True)
 
