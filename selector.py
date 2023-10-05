@@ -19,7 +19,7 @@ class Selector():
         while self.cont_select:
             # fetch packet from q. if q empty wait for packet to be put into q
             curPacket = self.q_sniff.get(True)
-            rnd := random.randint(0, 100)
+            rnd = random.randint(0, 100)
             if rnd > 99:
                 print(rnd)
                 self.q_conn.put(curPacket)
