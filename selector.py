@@ -20,6 +20,6 @@ class Selector():
             # fetch packet from q. if q empty wait for packet to be put into q
             curPacket = self.q_sniff.get(True)
 
-            if random.randint(0, 100) > 95:
+            if random.randint(0, 100) > 99:
                 self.q_conn.put(curPacket)
             
