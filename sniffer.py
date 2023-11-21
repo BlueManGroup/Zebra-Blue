@@ -18,17 +18,17 @@ class Sniffer():
         self.monitor_mode = monitor_mode
         self.cont_sniff = cont_sniff
         self.q = q
-        self.custom = [ #id.orig_p, id.resp_p, proto, orig_bytes, resp_bytes, orig_ip_bytes, resp_ip_bytes, encoding
-            '-T', 'fields',
-            '-e', 'tcp.srcport',       # Maps to Zeek's 'id.orig_p' (for TCP)
-            '-e', 'udp.srcport',       # Maps to Zeek's 'id.orig_p' (for UDP)
-            '-e', 'tcp.dstport',       # Maps to Zeek's 'id.resp_p' (for TCP)
-            '-e', 'udp.dstport',       # Maps to Zeek's 'id.resp_p' (for UDP)
-            '-e', 'ip.proto',          # protocol
-            '-e', 'tcp.len',           # Maps to Zeek's 'orig_bytes' or 'resp_bytes' (for TCP)
-            '-e', 'udp.length',        # Maps to Zeek's 'orig_bytes' or 'resp_bytes' (for UDP)
-            '-e', 'ip.len',            # orig/resp_ip_bytes
-        ]
+        # self.custom = [ #id.orig_p, id.resp_p, proto, orig_bytes, resp_bytes, orig_ip_bytes, resp_ip_bytes, encoding
+        #     '-T', 'fields',
+        #     '-e', 'tcp.srcport',       # Maps to Zeek's 'id.orig_p' (for TCP)
+        #     '-e', 'udp.srcport',       # Maps to Zeek's 'id.orig_p' (for UDP)
+        #     '-e', 'tcp.dstport',       # Maps to Zeek's 'id.resp_p' (for TCP)
+        #     '-e', 'udp.dstport',       # Maps to Zeek's 'id.resp_p' (for UDP)
+        #     '-e', 'ip.proto',          # protocol
+        #     '-e', 'tcp.len',           # Maps to Zeek's 'orig_bytes' or 'resp_bytes' (for TCP)
+        #     '-e', 'udp.length',        # Maps to Zeek's 'orig_bytes' or 'resp_bytes' (for UDP)
+        #     '-e', 'ip.len',            # orig/resp_ip_bytes
+        # ]
         self.our_network = self.create_our_network(ip_address)
 
     def create_our_network(self, ip_address):
