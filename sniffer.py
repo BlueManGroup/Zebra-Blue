@@ -25,7 +25,7 @@ class Sniffer():
             '-e', 'udp.srcport',       # Maps to Zeek's 'id.orig_p' (for UDP)
             '-e', 'tcp.dstport',       # Maps to Zeek's 'id.resp_p' (for TCP)
             '-e', 'udp.dstport',       # Maps to Zeek's 'id.resp_p' (for UDP)
-            '-e', 'ip.proto'           # protocl
+            '-e', 'ip.proto',          # protocl
             '-e', 'tcp.flags',         # Related to Zeek's 'conn_state' (for TCP)
             '-e', 'tcp.seq',           # Related to TCP sequence numbers
             '-e', 'tcp.ack',           # Related to TCP acknowledgment numbers
@@ -46,6 +46,7 @@ class Sniffer():
         print("sniffer beginning........")
         # set up for continuous capturing
         capture = pyshark.LiveCapture(interface=self.interface, custom_parameters=self.custom)
+        capture.set_debug(True)
         while self.cont_sniff:
             capture.sniff_continuously(packet_count=self.packet_count)
             # go through sniffed packets and put into queue
@@ -54,5 +55,6 @@ class Sniffer():
                 self.q.put(packet.__str__())
         capture.close()
 
-#sniffer = Sniffer(interface = 'Wi-Fi', monitor_mode = None)
-#sniffer.sniff()
+if __name__ == "__main__":
+    sniffer = Sniffer(interface = 'Wi-Fi')
+    sniffer.sniff()
