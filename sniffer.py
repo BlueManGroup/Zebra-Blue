@@ -19,7 +19,7 @@ class Sniffer():
         self.monitor_mode = monitor_mode
         self.cont_sniff = cont_sniff
         self.q = q
-        self.custom = [
+        self.custom = [ #id.orig_p, id.resp_p, proto, orig_bytes, resp_bytes, orig_ip_bytes, resp_ip_bytes, encoding
             '-T', 'fields',
             '-e', 'tcp.srcport',       # Maps to Zeek's 'id.orig_p' (for TCP)
             '-e', 'udp.srcport',       # Maps to Zeek's 'id.orig_p' (for UDP)
