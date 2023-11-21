@@ -9,7 +9,9 @@ fi
 # Update and install necessary packages
 echo "Updating package list and installing necessary packages..."
 sudo apt update
-sudo apt install -y dnsmasq hostapd dhcpcd5 iptables
+sudo apt install -y dnsmasq hostapd dhcpcd5 iptables tshark
+git clone "https://github.com/KimiNewt/pyshark.git"
+sudo python ./pyshark/src/setup.py install
 
 # Stop services to avoid conflicts during setup
 echo "Stopping dnsmasq, hostapd, and NetworkManager services..."
