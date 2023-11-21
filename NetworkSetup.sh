@@ -10,10 +10,10 @@ fi
 echo "Updating package list and installing necessary packages..."
 sudo apt update
 sudo apt install -y dnsmasq hostapd dhcpcd5 iptables tshark
-python3 -m venv .venv
-source .venv/bin/activate
-python3 -m pip install pyshark
-deactivate
+git clone https://github.com/KimiNewt/pyshark.git
+cd pyshark/src
+python setup.py install
+cd ../..
 
 # Stop services to avoid conflicts during setup
 echo "Stopping dnsmasq, hostapd, and NetworkManager services..."
