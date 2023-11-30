@@ -1,5 +1,6 @@
 import pyshark
 import time
+import datetime
 
 #TODO: FIGURE OUT TO GRACIOUSLY EXIT TSHARK - DO NOT LET IT BE OPEN TO CONSUME MEMORY
 
@@ -48,25 +49,30 @@ class Sniffer():
             capture.sniff_continuously(packet_count=self.packet_count)
             # go through sniffed packets and put into queue
             for packet in capture:
-                if "IP" in packet:
-                    print(self.create_our_network(packet.ip.src) == self.our_network)
-                src_port = packet[packet.transport_layer].srcport # Maps to Zeek's 'id.orig_p'
-                dst_port = packet[packet.transport_layer].dstport # Maps to Zeek's 'id.resp_p'
-                protocol = packet.transport_layer  # Protocol 
-                orig_ip_length = packet.ip.len if "IP" in packet else -1 # orig/resp_ip_bytes
-                orig_bytes = packet[packet.transport_layer].len if "TCP" in packet else packet[packet.transport_layer].length # orig_bytes
-                
-                content = [
-                    src_port, # Maps to Zeek's 'id.orig_p'
-                    dst_port, # Maps to Zeek's 'id.resp_p'
-                    protocol,
-                    orig_ip_length, 
-                    orig_bytes,
-                ]
-                    # Display the information
-                print(content)
-                # print(packet)
-                # self.q.put(packet.__str__())
+                try:
+                    if "IP" in packet:
+                        ip_from_home_network = self.create_our_network(packet.ip.src) == self.our_network
+                    src_port = packet[packet.transport_layer].srcport # Maps to Zeek's 'id.orig_p'
+                    dst_port = packet[packet.transport_layer].dstport # Maps to Zeek's 'id.resp_p'
+                    protocol = packet.transport_layer  # Protocol 
+                    orig_ip_length = packet.ip.len if "IP" in packet else -1 # orig/resp_ip_bytes
+                    orig_bytes = packet[packet.transport_layer].len if "TCP" in packet else packet[packet.transport_layer].length # orig_bytes
+                    
+                    content = [
+                        src_port, # Maps to Zeek's 'id.orig_p'
+                        dst_port, # Maps to Zeek's 'id.resp_p'
+                        protocol,
+                        orig_ip_length, 
+                        orig_bytes,
+                        ip_from_home_network
+                    ]
+                        # Display the information
+                    print(content)
+                    # print(packet)
+                    # self.q.put(packet.__str__())
+                except Exception as e:
+                    with open("error_log.txt", "a") as f:
+                        f.write(f"{datetime.datetime.now()} : {e}\n")
         capture.close()
 
 if __name__ == "__main__":
