@@ -1,37 +1,105 @@
-2023-11-30 13:12:52.182771 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
-2023-11-30 13:12:52.186258 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
-2023-11-30 13:12:52.190273 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
-2023-11-30 13:12:52.194269 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
-2023-11-30 13:12:52.197888 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
-2023-11-30 13:12:52.200466 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
-2023-11-30 13:12:52.202468 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
-2023-11-30 13:12:52.204768 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
-2023-11-30 13:12:52.206731 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
-2023-11-30 13:13:14.530582 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
-2023-11-30 13:13:14.534094 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
-2023-11-30 13:13:14.537712 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
-2023-11-30 13:13:14.541378 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
-2023-11-30 13:13:14.544751 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
-2023-11-30 13:13:14.546988 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
-2023-11-30 13:13:14.548894 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
-2023-11-30 13:13:14.551138 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
-2023-11-30 13:13:14.553333 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
-2023-11-30 13:13:14.772754 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
-2023-11-30 13:13:14.776666 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
-2023-11-30 13:13:14.781211 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
-2023-11-30 13:13:14.785999 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
-2023-11-30 13:13:14.789628 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
-2023-11-30 13:13:14.792238 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
-2023-11-30 13:13:14.794482 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
-2023-11-30 13:13:14.796937 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
-2023-11-30 13:13:14.798839 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
-2023-11-30 13:13:27.148691 : 'NoneType' object has no attribute 'lower'
-2023-11-30 13:13:27.156156 : 'NoneType' object has no attribute 'lower'
-2023-11-30 13:13:39.966555 : 'NoneType' object has no attribute 'lower'
-2023-11-30 13:14:00.033524 : 'NoneType' object has no attribute 'lower'
-2023-11-30 13:14:00.280484 : 'NoneType' object has no attribute 'lower'
-2023-11-30 13:14:41.469464 : 'NoneType' object has no attribute 'lower'
-2023-11-30 13:14:49.990625 : 'NoneType' object has no attribute 'lower'
-2023-11-30 13:14:49.992743 : 'NoneType' object has no attribute 'lower'
-2023-11-30 13:14:50.782884 : 'NoneType' object has no attribute 'lower'
-2023-11-30 13:15:00.039025 : 'NoneType' object has no attribute 'lower'
+2023-12-01 10:27:11.100428 : 'NoneType' object has no attribute 'lower'
+2023-12-01 12:53:28.970131 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.218226 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.222810 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.227200 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.230815 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.238154 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.241133 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.244100 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.247171 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.250011 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.252531 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.256294 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.259372 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.262639 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.274868 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.276834 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.278629 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.281148 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.471182 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.475616 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.481081 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.486193 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.489990 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.494089 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.497644 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.500891 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.503958 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.507144 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.510152 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.520629 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.522374 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.524174 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.525973 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.528069 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.529688 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.531150 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.532810 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.534341 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.535873 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.537479 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.721888 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.727371 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.732184 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.736158 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.740000 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.743695 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.747132 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.750578 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.760617 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.762907 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.764850 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.766807 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.767848 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.972437 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.976598 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.980122 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.984110 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.987750 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:29.990889 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:30.224018 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:30.726605 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:30.728716 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:30.732664 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:30.736126 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:31.224883 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:31.479057 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:31.483457 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:31.730883 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:31.734912 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:32.481913 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:32.486087 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:32.489969 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:32.493282 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:34.743696 : 'NoneType' object has no attribute 'put'
+2023-12-01 12:53:35.242536 : 'NoneType' object has no attribute 'lower'
+2023-12-01 12:59:05.815036 : 'NoneType' object has no attribute 'lower'
+2023-12-01 13:01:05.200620 : 'NoneType' object has no attribute 'lower'
+2023-12-01 13:02:18.815039 : 'NoneType' object has no attribute 'lower'
+2023-12-01 13:08:35.167039 : 'NoneType' object has no attribute 'lower'
+2023-12-01 13:08:36.184841 : 'NoneType' object has no attribute 'lower'
+2023-12-01 13:23:35.263835 : 'NoneType' object has no attribute 'lower'
+2023-12-01 13:27:28.257608 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
+2023-12-01 13:27:28.261620 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
+2023-12-01 13:27:28.264915 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
+2023-12-01 13:27:28.267839 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
+2023-12-01 13:27:28.268972 : 'NoneType' object has no attribute 'lower'
+2023-12-01 13:27:28.270000 : 'NoneType' object has no attribute 'lower'
+2023-12-01 13:27:28.272136 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
+2023-12-01 13:27:28.274460 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
+2023-12-01 13:27:28.276865 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
+2023-12-01 13:27:28.281354 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
+2023-12-01 13:27:28.283398 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
+2023-12-01 13:27:28.286096 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
+2023-12-01 13:27:28.288001 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
+2023-12-01 13:27:28.289944 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
+2023-12-01 13:27:28.513155 : 'NoneType' object has no attribute 'lower'
+2023-12-01 13:27:29.252251 : 'NoneType' object has no attribute 'lower'
+2023-12-01 13:27:29.254928 : 'NoneType' object has no attribute 'lower'
+2023-12-01 13:27:29.255691 : 'NoneType' object has no attribute 'lower'
+2023-12-01 13:27:30.255370 : 'NoneType' object has no attribute 'lower'
+2023-12-01 13:27:30.257122 : 'NoneType' object has no attribute 'lower'
+2023-12-01 13:27:31.764548 : 'NoneType' object has no attribute 'lower'
+2023-12-01 13:28:32.746179 : 'NoneType' object has no attribute 'lower'
+2023-12-01 13:28:42.533369 : 'NoneType' object has no attribute 'lower'
