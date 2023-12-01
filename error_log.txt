@@ -1,0 +1,37 @@
+2023-11-30 13:12:52.182771 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
+2023-11-30 13:12:52.186258 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
+2023-11-30 13:12:52.190273 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
+2023-11-30 13:12:52.194269 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
+2023-11-30 13:12:52.197888 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
+2023-11-30 13:12:52.200466 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
+2023-11-30 13:12:52.202468 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
+2023-11-30 13:12:52.204768 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
+2023-11-30 13:12:52.206731 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
+2023-11-30 13:13:14.530582 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
+2023-11-30 13:13:14.534094 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
+2023-11-30 13:13:14.537712 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
+2023-11-30 13:13:14.541378 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
+2023-11-30 13:13:14.544751 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
+2023-11-30 13:13:14.546988 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
+2023-11-30 13:13:14.548894 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
+2023-11-30 13:13:14.551138 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
+2023-11-30 13:13:14.553333 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
+2023-11-30 13:13:14.772754 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
+2023-11-30 13:13:14.776666 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
+2023-11-30 13:13:14.781211 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
+2023-11-30 13:13:14.785999 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
+2023-11-30 13:13:14.789628 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
+2023-11-30 13:13:14.792238 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
+2023-11-30 13:13:14.794482 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
+2023-11-30 13:13:14.796937 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
+2023-11-30 13:13:14.798839 : cannot access local variable 'ip_from_home_network' where it is not associated with a value
+2023-11-30 13:13:27.148691 : 'NoneType' object has no attribute 'lower'
+2023-11-30 13:13:27.156156 : 'NoneType' object has no attribute 'lower'
+2023-11-30 13:13:39.966555 : 'NoneType' object has no attribute 'lower'
+2023-11-30 13:14:00.033524 : 'NoneType' object has no attribute 'lower'
+2023-11-30 13:14:00.280484 : 'NoneType' object has no attribute 'lower'
+2023-11-30 13:14:41.469464 : 'NoneType' object has no attribute 'lower'
+2023-11-30 13:14:49.990625 : 'NoneType' object has no attribute 'lower'
+2023-11-30 13:14:49.992743 : 'NoneType' object has no attribute 'lower'
+2023-11-30 13:14:50.782884 : 'NoneType' object has no attribute 'lower'
+2023-11-30 13:15:00.039025 : 'NoneType' object has no attribute 'lower'
