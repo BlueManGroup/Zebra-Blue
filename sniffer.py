@@ -69,12 +69,14 @@ class Sniffer():
                         # Display the information
                     print(content)
                     # print(packet)
-                    # self.q.put(packet.__str__())
+                    # self.q.put(packet.__str__()) 
+                    self.q.put(content.__str__())
                 except Exception as e:
                     with open("error_log.txt", "a") as f:
                         f.write(f"{datetime.datetime.now()} : {e}\n")
         capture.close()
 
 if __name__ == "__main__":
-    sniffer = Sniffer(interface = 'Wi-Fi')
+    sniffer = Sniffer(interface = 'Wi-Fi') # for other
+    # sniffer = Sniffer(interface = 'eth0') #For raspberry pi
     sniffer.sniff()
