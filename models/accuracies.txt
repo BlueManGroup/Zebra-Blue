@@ -1,0 +1,3 @@
+20_rnd_forests_3d.pkl = 0.88ish accuracy
+20_rnd_forest_6d.pkl = 0.96ish
+30_rnd_forest_6d.pkl = 0.98ish

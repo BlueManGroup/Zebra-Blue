@@ -2,6 +2,8 @@ import socket
 import requests
 import time
 
+
+
 class Connection():
     def __init__(self, q=None):
         self.q = q

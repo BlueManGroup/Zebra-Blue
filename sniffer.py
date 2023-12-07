@@ -18,7 +18,7 @@ class Sniffer():
         self.interface = interface
         self.monitor_mode = monitor_mode
         self.cont_sniff = cont_sniff
-        self.q = q
+        self.q = q # useless
         # self.custom = [ #id.orig_p, id.resp_p, proto, orig_bytes, resp_bytes, orig_ip_bytes, resp_ip_bytes, encoding
         #     '-T', 'fields',
         #     '-e', 'tcp.srcport',       # Maps to Zeek's 'id.orig_p' (for TCP)
@@ -67,7 +67,7 @@ class Sniffer():
                         ip_from_home_network
                     ]
                         # Display the information
-                    print(content)
+                    # print(content)
                     # print(packet)
                     # self.q.put(packet.__str__()) 
                     self.q.put(content.__str__())
