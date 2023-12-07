@@ -65,7 +65,6 @@ class Selector():
                 prediction = self.model.predict(list_cur_packet)
                 print("prediction", prediction)
 
-
                 print(list_cur_packet, type(list_cur_packet))
-                self.q_conn.put(curPacket)
-            
+                self.q_conn.put(curPacket[:-1] + f", {prediction[0]}]")
+
