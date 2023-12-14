@@ -5,9 +5,6 @@ import numpy
 import pandas
 import ast
 
-# TODO: IMPLEMENT ML MODEL TO FIRST ANALYSE PACKETS
-# IF PACKET NON-SUS RUN THROUGH RANDOMIZER
-
 class Selector():
     def __init__(self, q_sniff=None, q_conn=None):
         self.q_sniff = q_sniff
@@ -41,7 +38,7 @@ class Selector():
             # fetch packet from q. if q empty wait for packet to be put into q
             curPacket = self.q_sniff.get(True)
             rnd = random.randint(0, 100)
-            if rnd > 70:
+            if rnd > 0:
                 print(rnd)
                 print(curPacket, type(curPacket))
 
