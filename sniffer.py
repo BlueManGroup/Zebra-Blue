@@ -13,7 +13,7 @@ class Sniffer():
     CONT_SNIFF = BOOLEAN TO STOP WHILE LOOP SNIFFING (TODO: FIGURE OUT TO NEGATE THIS DURING RUNTIME)
     Q = QUEUE MANAGER FROM OTHER FILE (TRANSMITS PACKETS TO MACHINE LEARNING MODEL (THIS IS NOT MODULAR OR GOOD PRACTICE TO HARDCODE LIKE THIS))
     '''
-    def __init__(self, packet_count=1, interface=None, monitor_mode=None, cont_sniff=True, q=None, ip_address="192.168.1.6"):
+    def __init__(self, packet_count=1, interface=None, monitor_mode=None, cont_sniff=True, q=None, ip_address="192.168.2.1"):
         self.packet_count = packet_count
         self.interface = interface
         self.monitor_mode = monitor_mode
@@ -57,6 +57,8 @@ class Sniffer():
                     protocol = packet.transport_layer  # Protocol 
                     orig_ip_length = packet.ip.len if "IP" in packet else -1 # orig/resp_ip_bytes
                     orig_bytes = packet[packet.transport_layer].len if "TCP" in packet else packet[packet.transport_layer].length # orig_bytes
+                    ip_src = packet.ip.src
+                    ip_dst = packet.ip.dst
                     
                     content = [
                         src_port, # Maps to Zeek's 'id.orig_p'
@@ -64,7 +66,9 @@ class Sniffer():
                         protocol,
                         orig_ip_length, 
                         orig_bytes,
-                        ip_from_home_network
+                        ip_from_home_network,
+                        ip_src,
+                        ip_dst
                     ]
                         # Display the information
                     # print(content)

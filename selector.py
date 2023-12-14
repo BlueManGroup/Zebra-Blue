@@ -59,7 +59,8 @@ class Selector():
 
                 # Making the prediction
                 print(list_cur_packet)
-                prediction = self.model.predict(list_cur_packet)
+                tmp = [list_cur_packet[0][:-2]]
+                prediction = self.model.predict(tmp)
                 print("prediction", prediction)
 
                 print(list_cur_packet, type(list_cur_packet))

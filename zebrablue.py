@@ -7,7 +7,7 @@ if __name__ == '__main__':
     q_sniff = mp.Queue()
     q_conn = mp.Queue()
     sniffer = Sniffer(q=q_sniff, interface='Wi-Fi', packet_count=1) # for other
-    # sniffer = Sniffer(q=q_sniff, interface='eth0', packet_count=1) # for pi5
+    # sniffer = Sniffer(q=q_sniff, interface='wlan0', packet_count=1) # for pi5
     connection = Connection(q=q_conn)
     # needs boths qs to send relevant packets to connection process
     selector = Selector(q_sniff=q_sniff, q_conn=q_conn)
