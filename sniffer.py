@@ -13,7 +13,7 @@ class Sniffer():
     CONT_SNIFF = BOOLEAN TO STOP WHILE LOOP SNIFFING (TODO: FIGURE OUT TO NEGATE THIS DURING RUNTIME)
     Q = QUEUE MANAGER FROM OTHER FILE (TRANSMITS PACKETS TO MACHINE LEARNING MODEL (THIS IS NOT MODULAR OR GOOD PRACTICE TO HARDCODE LIKE THIS))
     '''
-    def __init__(self, packet_count=1, interface=None, monitor_mode=None, cont_sniff=True, q=None, ip_address="192.168.1.6"):
+    def __init__(self, packet_count=1, interface=None, monitor_mode=None, cont_sniff=True, q=None, ip_address="192.168.2.1"):
         self.packet_count = packet_count
         self.interface = interface
         self.monitor_mode = monitor_mode
